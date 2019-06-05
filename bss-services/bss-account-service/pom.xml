@@ -11,8 +11,8 @@
     <artifactId>bss-account-service</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>account-facade</module>
-        <module>account-service</module>
+        <module>account-service-facade</module>
+        <module>account-service-impl</module>
     </modules>
 
 </project>
