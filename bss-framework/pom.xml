@@ -12,7 +12,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>bbs-framework-commons</module>
+        <module>bss-framework-commons</module>
+        <module>bss-framework-core</module>
     </modules>
 
 </project>

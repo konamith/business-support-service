@@ -1,9 +1,13 @@
 package com.bss.framework.commons.exception;
 
+import com.bss.framework.commons.enumeration.SystemType;
+
 /**
  * BSS服务层异常
  */
 public class BssServiceException extends RuntimeException {
+
+    private SystemType systemType;
 
     private String code;
 
