@@ -11,11 +11,7 @@
     <artifactId>account-service-facade</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>lm-studio</groupId>
-            <artifactId>bbs-framework-commons</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+        <!--facade只允许有暴露接口的描述信息，不允许依赖其他任何三方模块-->
     </dependencies>
 
     <build>

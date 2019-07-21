@@ -1,8 +1,5 @@
 package com.bss.service.account.param;
 
-import com.bss.framework.commons.param.BaseRequest;
-import com.bss.framework.commons.toolkit.JsonUtil;
-
 /**
  * @Description 注册账户接口入参
  * @Author LiuMing
@@ -38,6 +35,10 @@ public class RegisterAccountRequest extends BaseRequest {
 
     @Override
     public String toString() {
-        return JsonUtil.toJsonString(this);
+        final StringBuilder sb = new StringBuilder("RegisterAccountRequest{");
+        sb.append("mobileNo='").append(mobileNo).append('\'');
+        sb.append(", email='").append(email).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

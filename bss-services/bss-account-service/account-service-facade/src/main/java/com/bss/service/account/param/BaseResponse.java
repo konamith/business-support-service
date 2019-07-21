@@ -1,12 +1,10 @@
-package com.bss.framework.commons.param;
-
-import com.bss.framework.commons.toolkit.JsonUtil;
+package com.bss.service.account.param;
 
 import java.io.Serializable;
 
 public abstract class BaseResponse implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = -8231587645842922492L;
 
     /**
      * 返回码
@@ -36,6 +34,10 @@ public abstract class BaseResponse implements Serializable {
 
     @Override
     public String toString() {
-        return JsonUtil.toJsonString(this);
+        final StringBuilder sb = new StringBuilder("BaseResponse{");
+        sb.append("code='").append(code).append('\'');
+        sb.append(", message='").append(message).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }

@@ -1,13 +1,11 @@
 package com.bss.framework.commons.exception;
 
-import com.bss.framework.commons.enumeration.SystemType;
+import com.bss.framework.commons.toolkit.JsonUtil;
 
 /**
  * BSS服务层异常
  */
 public class BssServiceException extends RuntimeException {
-
-    private SystemType systemType;
 
     private String code;
 
@@ -32,10 +30,6 @@ public class BssServiceException extends RuntimeException {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("BssServiceException{");
-        sb.append("code='").append(code).append('\'');
-        sb.append(", message='").append(message).append('\'');
-        sb.append('}');
-        return sb.toString();
+        return JsonUtil.toJsonString(this);
     }
 }

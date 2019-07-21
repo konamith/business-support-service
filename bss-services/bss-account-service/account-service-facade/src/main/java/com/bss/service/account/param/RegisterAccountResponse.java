@@ -1,8 +1,5 @@
 package com.bss.service.account.param;
 
-import com.bss.framework.commons.param.BaseResponse;
-import com.bss.framework.commons.toolkit.JsonUtil;
-
 /**
  * @Description 注册账户接口出参
  * @Author LiuMing
@@ -14,6 +11,10 @@ public class RegisterAccountResponse extends BaseResponse {
 
     @Override
     public String toString() {
-        return JsonUtil.toJsonString(this);
+        final StringBuilder sb = new StringBuilder("RegisterAccountResponse{");
+        sb.append("code='").append(code).append('\'');
+        sb.append(", message='").append(message).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }
