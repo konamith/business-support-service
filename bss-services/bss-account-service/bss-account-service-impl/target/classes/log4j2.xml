@@ -57,6 +57,7 @@
         </logger>-->
         <logger name="com.bss" level="INFO" additivity="false">
             <appender-ref ref="RollingFile"/>
+            <appender-ref ref="Console"/>
         </logger>
         <logger name="performance" level="debug" additivity="false">
             <appender-ref ref="PerformanceRollingFile"/>

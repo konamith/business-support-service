@@ -11,8 +11,9 @@
     <artifactId>bss-cache-service</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>cache-facade</module>
-        <module>cache-service</module>
+        <module>bss-cache-commons</module>
+        <module>bss-cache-redis</module>
+        <module>bss-cache-memcached</module>
     </modules>
 
 </project>
