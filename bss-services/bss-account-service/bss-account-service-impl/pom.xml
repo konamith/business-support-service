@@ -18,7 +18,7 @@
         </dependency>-->
         <dependency>
             <groupId>lm-studio</groupId>
-            <artifactId>account-service-facade</artifactId>
+            <artifactId>bss-account-service-facade</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -44,8 +44,8 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
         <!--dubbo-->
@@ -60,6 +60,12 @@
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-recipes</artifactId>
+        </dependency>
+
+        <!--测试-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
         </dependency>
 
         <!--netty-->
