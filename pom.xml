@@ -33,7 +33,7 @@
         <dubbo-spring-boot-starter.version>0.2.1.RELEASE</dubbo-spring-boot-starter.version>
         <netty.version>4.1.42.Final</netty.version>
         <curator-recipes.version>2.13.0</curator-recipes.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
 
         <!--插件-->
         <spring-boot-maven-plugin.version>2.2.1.RELEASE</spring-boot-maven-plugin.version>
